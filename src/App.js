@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import './App.css';
 
 
+
 // cols, rows
 // import BootstrapTest from './component/botstrapTest/BootstrapTest';;
 
@@ -48,6 +49,7 @@ import './App.css';
 // import Form from './component/form/Form';
 import Form2 from './component/form/Form2';
 
+import Calendar from './component/calendar/Calendar';
 
 
 
@@ -61,6 +63,8 @@ const App = () => {
   
   return (
     <Wrapper>
+      {/* <Calendar/>  */}
+
       <Form2/>
       {/* <Form/> */}
 

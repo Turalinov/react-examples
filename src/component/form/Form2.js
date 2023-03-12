@@ -62,7 +62,6 @@ const Portal = (props) => {
   return ReactDOM.createPortal(props.children, node);
 }
 
-
 const Msg = () => {
   return (
     <div 
