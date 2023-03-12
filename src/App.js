@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import './App.css';
-// import {Button}  from 'react-bootstrap';
 
 
 // cols, rows
@@ -41,18 +40,37 @@ import './App.css';
 // import CitiesSlider from './component/slider/CitiesSlider';
 
 
+// import Message from './component/message/Message';
+// import CounterAdditional from './component/counter/CounterAdditional';
+// import Message from './component/message/Message';
+
+
+// import Form from './component/form/Form';
+import Form2 from './component/form/Form2';
+
+
+
 
 const App = () => {
-  
 
   const Wrapper = styled.div`
-    width: 600px;
-    margin: 80px auto 0 auto;
+    /* width: 600px; */
+    /* margin: 80px auto 0 auto; */
   `;
 
   
   return (
     <Wrapper>
+      <Form2/>
+      {/* <Form/> */}
+
+
+      {/* <CounterAdditional render={counter => (
+        <Message counter={counter}/>
+      )} />
+      <CounterAdditional render={counter => (
+        <Message counter={counter}/>
+      )} /> */}
 
       {/* <SplitPane
           left={<WelcomeDialog/>}
