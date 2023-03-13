@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import './App.css';
 
 
-
 // cols, rows
 // import BootstrapTest from './component/botstrapTest/BootstrapTest';;
 
@@ -47,10 +46,14 @@ import './App.css';
 
 
 // import Form from './component/form/Form';
-import Form2 from './component/form/Form2';
+// import Form2 from './component/form/Form2';
 
-import Calendar from './component/calendar/Calendar';
+// import Calendar from './component/calendar/Calendar';
 
+
+//HOOKS
+
+import Slider from './component/hooks/slider/Slider.js'
 
 
 const App = () => {
@@ -63,9 +66,12 @@ const App = () => {
   
   return (
     <Wrapper>
+
+      <Slider/>
+
       {/* <Calendar/>  */}
 
-      <Form2/>
+      {/* <Form2/> */}
       {/* <Form/> */}
 
 
