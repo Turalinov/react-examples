@@ -1,4 +1,4 @@
-import {Component, useState} from 'react';
+import {Component, useState, useEffect} from 'react';
 import {Container} from 'react-bootstrap';
 
 
@@ -47,11 +47,6 @@ import {Container} from 'react-bootstrap';
 //     }
 // }
 
-const calcValue = (max) => {
-  console.log('random');
-  return Math.random() * (max - 1) + 1;
-}
-
 
 const Slider = (props) => {
   
@@ -68,8 +63,17 @@ const Slider = (props) => {
     //   setState(state => ({...state, autoplay: !state.autoplay}))
     // }
 
-    const [slide, setSlide] = useState(() => calcValue(100));
+    // const [slide, setSlide] = useState(() => calcValue(100));
+    const [slide, setSlide] = useState(0);
+
+    useEffect(() => {
+        console.log('effect')
+        document.title = `Вы нажали ${slide} раз`
+    }, [slide])
+
     const [autoplay, setAutoplay] = useState(false);
+
+
 
 
     function changeSlide(i) {
