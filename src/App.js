@@ -1,4 +1,4 @@
-import React, {useState, useEffect, Component} from 'react';
+import React, {useState, useEffect, useCallback, Component} from 'react';
 import styled from 'styled-components';
 import './App.css';
 
@@ -55,13 +55,26 @@ import './App.css';
 //HOOKS
 
 // useState
-// import Slider from './component/hooks/slider/Slider.js'
+import Slider from './component/hooks/slider/Slider.js'
 
 
 //useEffect
 // import FriendStatusWithCounter from './component/hooks/friendStatusWithCounter/FriendStatusWithCounter';
 // import FriendStatus from './component/hooks/friendStatus/FriendStatus';
 // import Example from './component/hooks/example/Example';
+
+
+//useCallback
+
+// const memoizedCallback = useCallback(() => {
+//   doSomething(a,b)
+// }, [a, b]) 
+
+
+// import Cars from './component/hooks/cars/Cars'
+
+
+
 
 
 const App = () => {
@@ -71,10 +84,19 @@ const App = () => {
     /* margin: 80px auto 0 auto; */
   `;
 
+
+//  const cars = [
+//   {id: 1, model: 'model1'},
+//   {id: 2, model: 'model2'},
+//   {id: 3, model: 'model3'},
+//   {id: 4, model: 'model4'},
+//  ]
+
   
   return (
     <Wrapper>
-      {/* <Slider/> */}
+      {/* <Cars cars={cars}/> */}
+      <Slider/>
 
       {/* <FriendStatusWithCounter friend={{id: 546}}/> */}
       {/* <FriendStatus friend={{id: 546}}/> */}
