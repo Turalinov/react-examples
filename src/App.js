@@ -72,6 +72,7 @@ import Slider from './component/hooks/slider/Slider.js'
 
 
 // import Cars from './component/hooks/cars/Cars'
+import Parent from './component/hooks/parent/Parent';
 
 
 
@@ -92,11 +93,15 @@ const App = () => {
 //   {id: 4, model: 'model4'},
 //  ]
 
+
+
+
   
   return (
     <Wrapper>
       {/* <Cars cars={cars}/> */}
-      <Slider/>
+      {/* <Parent/> */}
+      {/* <Slider/> */}
 
       {/* <FriendStatusWithCounter friend={{id: 546}}/> */}
       {/* <FriendStatus friend={{id: 546}}/> */}
