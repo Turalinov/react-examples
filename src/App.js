@@ -54,7 +54,7 @@ import './App.css';
 
 //HOOKS
 
-// useState
+// useState + useMemo
 import Slider from './component/hooks/slider/Slider.js'
 
 
@@ -72,10 +72,11 @@ import Slider from './component/hooks/slider/Slider.js'
 
 
 // import Cars from './component/hooks/cars/Cars'
-import Parent from './component/hooks/parent/Parent';
+// import Parent from './component/hooks/parent/Parent';
 
 
-
+// useMemo
+import UseMemoExample from './component/hooks/useMemoExample/UseMemoExample';
 
 
 const App = () => {
@@ -102,6 +103,9 @@ const App = () => {
       {/* <Cars cars={cars}/> */}
       {/* <Parent/> */}
       {/* <Slider/> */}
+      <UseMemoExample/>
+
+
 
       {/* <FriendStatusWithCounter friend={{id: 546}}/> */}
       {/* <FriendStatus friend={{id: 546}}/> */}
