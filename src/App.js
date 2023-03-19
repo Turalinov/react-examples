@@ -80,7 +80,8 @@ import Slider from './component/hooks/slider/Slider.js'
 
 //useRef 
 // import Form from './component/form/Form';
-import Increment from './component/hooks/useRefExample/Increment'
+import Increment from './component/hooks/useRefExample/Increment';
+import Timer from './component/hooks/useRefExample/Timer';
 
 const App = () => {
 
@@ -119,7 +120,8 @@ const App = () => {
       {/* <Form2/> */}
       {/* <Form/> */}
 
-      <Increment/>
+      {/* <Increment/> */}
+      <Timer/>
 
 
       {/* <CounterAdditional render={counter => (
