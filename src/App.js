@@ -79,9 +79,8 @@ import Slider from './component/hooks/slider/Slider.js'
 
 
 //useRef 
-
-import Form from './component/form/Form';
-
+// import Form from './component/form/Form';
+import Increment from './component/hooks/useRefExample/Increment'
 
 const App = () => {
 
@@ -118,7 +117,9 @@ const App = () => {
 
       {/* <Calendar/>  */}
       {/* <Form2/> */}
-      <Form/>
+      {/* <Form/> */}
+
+      <Increment/>
 
 
       {/* <CounterAdditional render={counter => (
