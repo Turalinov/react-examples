@@ -49,7 +49,6 @@ import './App.css';
 
 // import Calendar from './component/calendar/Calendar';
 // import Form2 from './component/form/Form2';
-// import Form from './component/form/Form';
 
 
 //HOOKS
@@ -76,7 +75,12 @@ import Slider from './component/hooks/slider/Slider.js'
 
 
 // useMemo
-import UseMemoExample from './component/hooks/useMemoExample/UseMemoExample';
+// import UseMemoExample from './component/hooks/useMemoExample/UseMemoExample';
+
+
+//useRef 
+
+import Form from './component/form/Form';
 
 
 const App = () => {
@@ -103,7 +107,7 @@ const App = () => {
       {/* <Cars cars={cars}/> */}
       {/* <Parent/> */}
       {/* <Slider/> */}
-      <UseMemoExample/>
+      {/* <UseMemoExample/> */}
 
 
 
@@ -114,7 +118,7 @@ const App = () => {
 
       {/* <Calendar/>  */}
       {/* <Form2/> */}
-      {/* <Form/> */}
+      <Form/>
 
 
       {/* <CounterAdditional render={counter => (
