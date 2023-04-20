@@ -61,6 +61,7 @@ import './App.css';
 // import FriendStatusWithCounter from './component/hooks/friendStatusWithCounter/FriendStatusWithCounter';
 import FriendStatus from './component/hooks/friendStatus/FriendStatus';
 import FriendList from './component/hooks/friendList/FriendList';
+import ChatRecipientPicker from './component/hooks/chatRecipientPicker/ChatRecipientPicker';
 // import Example from './component/hooks/example/Example';
 
 
@@ -120,6 +121,7 @@ const App = () => {
       <FriendStatus friend={{id: 546}}/>
       <FriendStatus friend={{id: 545}}/>
       <FriendList/>
+      <ChatRecipientPicker/>
       {/* <Example/> */}
 
 
