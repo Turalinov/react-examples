@@ -1,31 +1,31 @@
-import {Component} from 'react';
+import{Component} from 'react';
+class CounterAdditional extends Component{
 
-
-
-class CounterAdditional extends Component {
   state = {
     counter: 0
   }
 
   changeCounter = () => {
-    this.setState(({counter}) => ({
-      counter: counter + 1
-    }))
-  }
+    this.setState(({counter}) => ({ 
+        counter: counter + 1
+      })
+    )
+  } 
 
-  render () {
+  render() {
     return (
       <>
         <button
           className={'btn btn-primary'}
           onClick={this.changeCounter}
         >
-          ClickMe
+          Click me
         </button>
         {this.props.render(this.state.counter)}
       </>
     )
   }
+
 }
 
 export default CounterAdditional;

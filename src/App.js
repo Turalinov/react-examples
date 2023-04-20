@@ -43,8 +43,8 @@ import './App.css';
 // import CitiesSlider from './component/slider/CitiesSlider';
 
 
-// import CounterAdditional from './component/counter/CounterAdditional';
-// import Message from './component/message/Message';
+import CounterAdditional from './component/counter/CounterAdditional';
+import Message from './component/message/Message'; // render props
 
 
 // import Calendar from './component/calendar/Calendar';
@@ -80,8 +80,8 @@ import Slider from './component/hooks/slider/Slider.js'
 
 //useRef 
 // import Form from './component/form/Form';
-import Increment from './component/hooks/useRefExample/Increment';
-import Timer from './component/hooks/useRefExample/Timer';
+// import Increment from './component/hooks/useRefExample/Increment';
+// import Timer from './component/hooks/useRefExample/Timer';
 
 const App = () => {
 
@@ -121,12 +121,12 @@ const App = () => {
       {/* <Form/> */}
 
       {/* <Increment/> */}
-      <Timer/>
+      {/* <Timer/> */}
 
 
-      {/* <CounterAdditional render={counter => (
+      <CounterAdditional render={counter => (
         <Message counter={counter}/>
-      )} /> */}
+      )} />
 
       {/* <SplitPane
           left={<WelcomeDialog/>}
