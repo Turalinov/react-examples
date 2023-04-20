@@ -43,8 +43,8 @@ import './App.css';
 // import CitiesSlider from './component/slider/CitiesSlider';
 
 
-import CounterAdditional from './component/counter/CounterAdditional';
-import Message from './component/message/Message'; // render props
+// import CounterAdditional from './component/counter/CounterAdditional';
+// import Message from './component/message/Message'; // render props
 
 
 // import Calendar from './component/calendar/Calendar';
@@ -54,12 +54,13 @@ import Message from './component/message/Message'; // render props
 //HOOKS
 
 // useState + useMemo
-import Slider from './component/hooks/slider/Slider.js'
+// import Slider from './component/hooks/slider/Slider.js'
 
 
 //useEffect
 // import FriendStatusWithCounter from './component/hooks/friendStatusWithCounter/FriendStatusWithCounter';
-// import FriendStatus from './component/hooks/friendStatus/FriendStatus';
+import FriendStatus from './component/hooks/friendStatus/FriendStatus';
+import FriendList from './component/hooks/friendList/FriendList';
 // import Example from './component/hooks/example/Example';
 
 
@@ -82,6 +83,10 @@ import Slider from './component/hooks/slider/Slider.js'
 // import Form from './component/form/Form';
 // import Increment from './component/hooks/useRefExample/Increment';
 // import Timer from './component/hooks/useRefExample/Timer';
+
+
+// custom hook
+import Form3 from './component/form/Form3';
 
 const App = () => {
 
@@ -112,7 +117,9 @@ const App = () => {
 
 
       {/* <FriendStatusWithCounter friend={{id: 546}}/> */}
-      {/* <FriendStatus friend={{id: 546}}/> */}
+      <FriendStatus friend={{id: 546}}/>
+      <FriendStatus friend={{id: 545}}/>
+      <FriendList/>
       {/* <Example/> */}
 
 
@@ -124,9 +131,9 @@ const App = () => {
       {/* <Timer/> */}
 
 
-      <CounterAdditional render={counter => (
+      {/* <CounterAdditional render={counter => (
         <Message counter={counter}/>
-      )} />
+      )} /> */}
 
       {/* <SplitPane
           left={<WelcomeDialog/>}
@@ -175,6 +182,9 @@ const App = () => {
 
       {/* слайдер  */}
       {/* <CitiesSlider slides={slides} /> */}
+
+
+      <Form3/>
 
       
     </Wrapper>

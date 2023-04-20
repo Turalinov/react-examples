@@ -1,5 +1,21 @@
-import {useState, useEffect} from 'react';
-import ChatAPI from '../../../services/ChatAPI';
+import useFriendStatus from '../../../helpers/useFriendStatus';
+
+function FriendStatus(props) {
+  const isOnline = useFriendStatus(props.friend.id)
+  
+  if(isOnline === null) {
+    console.log('Загрузка...')
+    return 'Загрузка...'
+  }
+
+  console.log(isOnline);
+   
+  return  isOnline ? `в сети ` : `не в сети `
+ 
+}
+
+export default FriendStatus;
+
 
 
 // class FriendStatus extends Component {
@@ -57,32 +73,3 @@ import ChatAPI from '../../../services/ChatAPI';
 //       return this.state.isOnline ? 'В сети' : 'Не в сети';
 //     }
 // }
-
-
-function FriendStatus(props) {
-  const [isOnline, setIsOnline] = useState(null);
-
-  useEffect(() => {
-    function handleStatusChange(status) {
-      setIsOnline(status.isOnline)
-    }
-
-    ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
-
-    //указываем как сбросить этот эффект
-    return function cleanup() {
-      ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange)
-    }
-
-  }, [props.friend.id]); //повтороно подписаться, только если props.friend.id поменялся   
-  
-  if(isOnline === null) {
-    console.log('Загрузка...')
-    return 'Загрузка...'
-  }
-
-  console.log(isOnline);
-  return isOnline ? 'В сети' : 'Не в сети'
-}
-
-export default FriendStatus;

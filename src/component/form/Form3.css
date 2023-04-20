@@ -1,0 +1,5 @@
+input[readonly],
+input[readonly]:focus {
+  background-color: #efefef;
+}
+

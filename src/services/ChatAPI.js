@@ -2,6 +2,7 @@
 const friends = [
   {
     id: 545, 
+    name: 'Ruslan',
     status: {
       isOnline: false
     }
@@ -9,6 +10,7 @@ const friends = [
   
   {
     id: 546, 
+    name: 'Arailym',
     status: {
       isOnline: true
     }
@@ -28,3 +30,4 @@ class ChatAPI {
 }
 
 export default ChatAPI;
+export {friends};
